@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GUI" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/pvengine32d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/Win32/Debug/" />
+				<Option deps_output="bin32/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DWINVER=0x0501" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="povray" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/pvengine$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/x64/Release-AVX/" />
+				<Option deps_output="bin64/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/pvengine64d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/x64/Debug/" />
+				<Option deps_output="bin64/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/pvengine64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/x64/Release/" />
+				<Option deps_output="bin64/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/pvengine32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/Win32/Release/" />
+				<Option deps_output="bin32/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0501" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="povray" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/pvengine32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/GUI/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0501" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILD_SSE2=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../rtrsupport/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="comctl32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="user32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="winmm.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../README.md" />
+		<Unit filename="../bitmaps/StretchDIBits.bmp" />
+		<Unit filename="../bitmaps/about.bmp" />
+		<Unit filename="../bitmaps/backgnd1.bmp" />
+		<Unit filename="../bitmaps/backgnd2.bmp" />
+		<Unit filename="../bitmaps/backgnd4.bmp" />
+		<Unit filename="../bitmaps/backgnd5.bmp" />
+		<Unit filename="../bitmaps/default.bmp" />
+		<Unit filename="../bitmaps/renderanim-4bpp.bmp" />
+		<Unit filename="../bitmaps/renderanim.bmp" />
+		<Unit filename="../bitmaps/toolbar/SysTray.bmp" />
+		<Unit filename="../bitmaps/toolbar/cmdline.bmp" />
+		<Unit filename="../bitmaps/toolbar/fileclose.bmp" />
+		<Unit filename="../bitmaps/toolbar/filenew.bmp" />
+		<Unit filename="../bitmaps/toolbar/fileopen.bmp" />
+		<Unit filename="../bitmaps/toolbar/filequeue.bmp" />
+		<Unit filename="../bitmaps/toolbar/filerender.bmp" />
+		<Unit filename="../bitmaps/toolbar/filesave.bmp" />
+		<Unit filename="../bitmaps/toolbar/goirtc.bmp" />
+		<Unit filename="../bitmaps/toolbar/gopovray.bmp" />
+		<Unit filename="../bitmaps/toolbar/helpcont.bmp" />
+		<Unit filename="../bitmaps/toolbar/helpirtccd.bmp" />
+		<Unit filename="../bitmaps/toolbar/helppovcd.bmp" />
+		<Unit filename="../bitmaps/toolbar/helppovray.bmp" />
+		<Unit filename="../bitmaps/toolbar/renderclose.bmp" />
+		<Unit filename="../bitmaps/toolbar/rendershow.bmp" />
+		<Unit filename="../bitmaps/toolbar/renderstop.bmp" />
+		<Unit filename="../bitmaps/toolbar/rerun.bmp" />
+		<Unit filename="../bitmaps/toolbar/sleep.bmp" />
+		<Unit filename="../bitmaps/toolbar/sourcefile.bmp" />
+		<Unit filename="../icons/pvengine-xp.ico" />
+		<Unit filename="../icons/pvengine.ico" />
+		<Unit filename="../icons/renderwindow-xp.ico" />
+		<Unit filename="../icons/renderwindow.ico" />
+		<Unit filename="../povwin_version.h" />
+		<Unit filename="../pvbitmap.cpp" />
+		<Unit filename="../pvbitmap.h" />
+		<Unit filename="../pvdemo.h" />
+		<Unit filename="../pvdialog.cpp" />
+		<Unit filename="../pvdialog.h" />
+		<Unit filename="../pvdisplay.cpp" />
+		<Unit filename="../pvdisplay.h" />
+		<Unit filename="../pvedit.cpp" />
+		<Unit filename="../pvedit.h" />
+		<Unit filename="../pvengine.cpp" />
+		<Unit filename="../pvengine.h" />
+		<Unit filename="../pvengine.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../pvfiles.cpp" />
+		<Unit filename="../pvfrontend.cpp" />
+		<Unit filename="../pvfrontend.h" />
+		<Unit filename="../pvguiext.cpp" />
+		<Unit filename="../pvguiext.h" />
+		<Unit filename="../pvlegal.h" />
+		<Unit filename="../pvmem.cpp" />
+		<Unit filename="../pvmem.h" />
+		<Unit filename="../pvmenu.cpp" />
+		<Unit filename="../pvmisc.cpp" />
+		<Unit filename="../pvtext.cpp" />
+		<Unit filename="../pvupdate.cpp" />
+		<Unit filename="../resource.h" />
+		<Unit filename="../winprecomp.cpp" />
+		<Unit filename="../winprecomp.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

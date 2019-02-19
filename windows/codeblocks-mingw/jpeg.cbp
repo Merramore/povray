@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jpeg" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/lib/jpeg32d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/Win32/Debug/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/Zi" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="jpeg" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/lib/jpeg$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/x64/Release-AVX/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/lib/jpeg64d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/x64/Debug/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/Zi" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/lib/jpeg64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/x64/Release/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/lib/jpeg32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/Win32/Release/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="jpeg" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/lib/jpeg32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/jpeg/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../../libraries/jpeg/jaricom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jccoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jccolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcdctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jchuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcomapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jconfig.h" />
+		<Unit filename="../../libraries/jpeg/jcparam.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcprepct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jcsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jctrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdapimin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdapistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdarith.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdatadst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdatasrc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdcoefct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdcolor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdct.h" />
+		<Unit filename="../../libraries/jpeg/jddctmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdhuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdinput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdmainct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdmarker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdmaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdmerge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdpostct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdsample.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jdtrans.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jerror.h" />
+		<Unit filename="../../libraries/jpeg/jfdctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jfdctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jfdctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jidctflt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jidctfst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jidctint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jinclude.h" />
+		<Unit filename="../../libraries/jpeg/jmemmgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jmemnobs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jmemsys.h" />
+		<Unit filename="../../libraries/jpeg/jmorecfg.h" />
+		<Unit filename="../../libraries/jpeg/jpegint.h" />
+		<Unit filename="../../libraries/jpeg/jpeglib.h" />
+		<Unit filename="../../libraries/jpeg/jquant1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jquant2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jutils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/jpeg/jversion.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

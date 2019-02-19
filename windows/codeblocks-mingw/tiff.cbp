@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tiff" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/lib/tiff32d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/Win32/Debug/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/Zi" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="tiff" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/lib/tiff$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/x64/Release-AVX/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/lib/tiff64d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/x64/Debug/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/Zi" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/lib/tiff64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/x64/Release/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/lib/tiff32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/Win32/Release/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="tiff" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/lib/tiff32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/tiff/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D_MBCS" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_LIB" />
+					<Add option="/DUSE_WIN32_FILEIO" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/O2" />
+					<Add option="/MT" />
+					<Add option="/W2" />
+					<Add option="/wd4133" />
+					<Add option="/wd4005" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="nmake tifconf.mak" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../../libraries/tiff/libtiff/t4.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tif_aux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_close.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_codec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_config.h.vc" />
+		<Unit filename="../../libraries/tiff/libtiff/tif_dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_dir.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tif_dirinfo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_dirread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_dirwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_dumpmode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_fax3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_fax3.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tif_fax3sm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_flush.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_getimage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_jpeg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_luv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_lzw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_next.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_open.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_packbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_pixarlog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_predict.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_predict.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tif_print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_strip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_swab.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_thunder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_version.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_warning.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_win32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_write.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tif_zip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../libraries/tiff/libtiff/tiff.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tiffconf.h.vc" />
+		<Unit filename="../../libraries/tiff/libtiff/tiffio.h" />
+		<Unit filename="../../libraries/tiff/libtiff/tiffiop.h" />
+		<Unit filename="../../libraries/tiff/libtiff/uvcode.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

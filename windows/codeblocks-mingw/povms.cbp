@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="povms" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/lib/povms32d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/Win32/Debug/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="povms" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/lib/povms$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/x64/Release-AVX/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/lib/povms64d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/x64/Debug/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/lib/povms64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/x64/Release/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/lib/povms32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/Win32/Release/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="povms" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/lib/povms32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povms/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNON_UNIX_OPENEXR_HEADERS" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILD_SSE2=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/openexr/IlmImf/" />
+					<Add directory="../../libraries/ilmbase/Half/" />
+					<Add directory="../../libraries/ilmbase/Imath/" />
+					<Add directory="../../libraries/ilmbase/Iex/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../../source/povms/configpovms.h" />
+		<Unit filename="../../source/povms/povms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../source/povms/povms.cpp" />
+		<Unit filename="../../source/povms/povms.h" />
+		<Unit filename="../../source/povms/povmscpp.cpp" />
+		<Unit filename="../../source/povms/povmscpp.h" />
+		<Unit filename="../../source/povms/povmsid.h" />
+		<Unit filename="../../source/povms/povmsutil.cpp" />
+		<Unit filename="../../source/povms/povmsutil.h" />
+		<Unit filename="../../source/povms/precomp.cpp" />
+		<Unit filename="../../source/povms/precomp.h" />
+		<Unit filename="../povconfig/syspovconfigpovms.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

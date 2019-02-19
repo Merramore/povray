@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="povray workspace">
+		<Project filename="povray.cbp" />
+		<Project filename="jpeg.cbp" />
+		<Project filename="libpng.cbp" />
+		<Project filename="tiff.cbp" />
+		<Project filename="zlib.cbp" />
+		<Project filename="vfewin.cbp" />
+		<Project filename="rtrsupport.cbp" />
+		<Project filename="console.cbp" />
+		<Project filename="povbackend.cbp" />
+		<Project filename="povbase.cbp" />
+		<Project filename="povfrontend.cbp" />
+		<Project filename="boost_thread.cbp" />
+		<Project filename="boost_date_time.cbp" />
+		<Project filename="openexr_IlmImf.cbp" />
+		<Project filename="openexr_Iex.cbp" />
+		<Project filename="openexr_IlmThread.cbp" />
+		<Project filename="openexr_Half.cbp" />
+		<Project filename="openexr_eLut.cbp" />
+		<Project filename="openexr_toFloat.cbp" />
+		<Project filename="tests.cbp" />
+		<Project filename="povcore.cbp" />
+		<Project filename="povparser.cbp" />
+		<Project filename="povms.cbp" />
+		<Project filename="povplatform.cbp" />
+		<Project filename="boost_system.cbp" />
+		<Project filename="povvm.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

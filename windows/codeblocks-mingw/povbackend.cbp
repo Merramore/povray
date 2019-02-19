@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="povbackend" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/lib/povbackend32d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/Win32/Debug/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="povbackend" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/lib/povbackend$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/x64/Release-AVX/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/lib/povbackend64d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/x64/Debug/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/lib/povbackend64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/x64/Release/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/lib/povbackend32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/Win32/Release/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="povbackend" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/lib/povbackend32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/povbackend/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILD_SSE2=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+					<Add directory="../../libraries/ilmbase/config.windows/" />
+					<Add directory="../../libraries/openexr/config.windows/" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../../source/backend/bounding/boundingtask.cpp" />
+		<Unit filename="../../source/backend/bounding/boundingtask.h" />
+		<Unit filename="../../source/backend/configbackend.h" />
+		<Unit filename="../../source/backend/control/benchmark.cpp" />
+		<Unit filename="../../source/backend/control/benchmark.h" />
+		<Unit filename="../../source/backend/control/benchmark_ini.cpp" />
+		<Unit filename="../../source/backend/control/benchmark_ini.h" />
+		<Unit filename="../../source/backend/control/benchmark_pov.cpp" />
+		<Unit filename="../../source/backend/control/benchmark_pov.h" />
+		<Unit filename="../../source/backend/control/messagefactory.cpp" />
+		<Unit filename="../../source/backend/control/messagefactory.h" />
+		<Unit filename="../../source/backend/control/messagefactory_fwd.h" />
+		<Unit filename="../../source/backend/control/parsertask.cpp" />
+		<Unit filename="../../source/backend/control/parsertask.h" />
+		<Unit filename="../../source/backend/control/renderbackend.cpp" />
+		<Unit filename="../../source/backend/control/renderbackend.h" />
+		<Unit filename="../../source/backend/control/scene.cpp" />
+		<Unit filename="../../source/backend/control/scene.h" />
+		<Unit filename="../../source/backend/control/scene_fwd.h" />
+		<Unit filename="../../source/backend/lighting/photonestimationtask.cpp" />
+		<Unit filename="../../source/backend/lighting/photonestimationtask.h" />
+		<Unit filename="../../source/backend/lighting/photonshootingstrategy.cpp" />
+		<Unit filename="../../source/backend/lighting/photonshootingstrategy.h" />
+		<Unit filename="../../source/backend/lighting/photonshootingstrategy_fwd.h" />
+		<Unit filename="../../source/backend/lighting/photonshootingtask.cpp" />
+		<Unit filename="../../source/backend/lighting/photonshootingtask.h" />
+		<Unit filename="../../source/backend/lighting/photonsortingtask.cpp" />
+		<Unit filename="../../source/backend/lighting/photonsortingtask.h" />
+		<Unit filename="../../source/backend/lighting/photonstrategytask.cpp" />
+		<Unit filename="../../source/backend/lighting/photonstrategytask.h" />
+		<Unit filename="../../source/backend/povray.cpp" />
+		<Unit filename="../../source/backend/povray.h" />
+		<Unit filename="../../source/backend/precomp.cpp" />
+		<Unit filename="../../source/backend/precomp.h" />
+		<Unit filename="../../source/backend/render/radiositytask.cpp" />
+		<Unit filename="../../source/backend/render/radiositytask.h" />
+		<Unit filename="../../source/backend/render/rendertask.cpp" />
+		<Unit filename="../../source/backend/render/rendertask.h" />
+		<Unit filename="../../source/backend/render/tracetask.cpp" />
+		<Unit filename="../../source/backend/render/tracetask.h" />
+		<Unit filename="../../source/backend/scene/backendscenedata.cpp" />
+		<Unit filename="../../source/backend/scene/backendscenedata.h" />
+		<Unit filename="../../source/backend/scene/backendscenedata_fwd.h" />
+		<Unit filename="../../source/backend/scene/view.cpp" />
+		<Unit filename="../../source/backend/scene/view.h" />
+		<Unit filename="../../source/backend/scene/view_fwd.h" />
+		<Unit filename="../../source/backend/scene/viewthreaddata.cpp" />
+		<Unit filename="../../source/backend/scene/viewthreaddata.h" />
+		<Unit filename="../../source/backend/scene/viewthreaddata_fwd.h" />
+		<Unit filename="../../source/backend/support/task.cpp" />
+		<Unit filename="../../source/backend/support/task.h" />
+		<Unit filename="../../source/backend/support/taskqueue.cpp" />
+		<Unit filename="../../source/backend/support/taskqueue.h" />
+		<Unit filename="../povconfig/syspovconfigbackend.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pov_core" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw64" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="bin32/lib/povcore32d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/Win32/Debug/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-AVX Win32">
+				<Option output="povcore" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-AVX x64">
+				<Option output="bin64/lib/pov_core$(ConfigTag)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/x64/Release-AVX/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="bin64/lib/povcore64d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/x64/Debug/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_HAS_ITERATOR_DEBUGGING=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Od" />
+					<Add option="/MTd" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin64/lib/povcore64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/x64/Release/" />
+				<Option deps_output="bin64/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILDING_AMD64=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin32/lib/povcore32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/Win32/Release/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+			<Target title="Release-SSE2 x64">
+				<Option output="povcore" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="mingw64" />
+			</Target>
+			<Target title="Release-SSE2 Win32">
+				<Option output="bin32/lib/povcore32-sse2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="build/pov_core/Win32/Release-SSE2/" />
+				<Option deps_output="bin32/lib/" />
+				<Option type="2" />
+				<Option compiler="mingw64" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="/D$(PovBuildDefs)BOOST_ALL_NO_LIB" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/DWIN32_LEAN_AND_MEAN" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DCOMMONCTRL_VERSION=0x500" />
+					<Add option="/DCLASSLIB_DEFS_H" />
+					<Add option="/DWINVER=0x0500" />
+					<Add option="/D_WIN32_WINNT=0x0500" />
+					<Add option="/DNOMINMAX" />
+					<Add option="/DISOLATION_AWARE_ENABLED" />
+					<Add option="/D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="/D_SECURE_SCL=0" />
+					<Add option="/DBUILD_SSE2=1" />
+					<Add option="/Ox" />
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/wd4800" />
+					<Add option="/wd4355" />
+					<Add directory="../../internal/windows/" />
+					<Add directory="../../platform/x86/" />
+					<Add directory="../../platform/windows/" />
+					<Add directory="../../windows/povconfig/" />
+					<Add directory="../../libraries/boost/" />
+					<Add directory="../../vfe/win/" />
+					<Add directory="../../vfe/" />
+					<Add directory="../../source/" />
+					<Add directory="../../libraries/jpeg/" />
+					<Add directory="../../libraries/zlib/" />
+					<Add directory="../../libraries/png/" />
+					<Add directory="../../libraries/tiff/libtiff/" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="/pdb:$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).pdb" />
+		</Linker>
+		<Unit filename="../../source/core/bounding/bounding.cpp" />
+		<Unit filename="../../source/core/bounding/bounding.h" />
+		<Unit filename="../../source/core/bounding/boundingbox.cpp" />
+		<Unit filename="../../source/core/bounding/boundingbox.h" />
+		<Unit filename="../../source/core/bounding/boundingbox_fwd.h" />
+		<Unit filename="../../source/core/bounding/boundingcylinder.cpp" />
+		<Unit filename="../../source/core/bounding/boundingcylinder.h" />
+		<Unit filename="../../source/core/bounding/boundingcylinder_fwd.h" />
+		<Unit filename="../../source/core/bounding/boundingsphere.cpp" />
+		<Unit filename="../../source/core/bounding/boundingsphere.h" />
+		<Unit filename="../../source/core/bounding/bsptree.cpp" />
+		<Unit filename="../../source/core/bounding/bsptree.h" />
+		<Unit filename="../../source/core/colour/spectral.cpp" />
+		<Unit filename="../../source/core/colour/spectral.h" />
+		<Unit filename="../../source/core/configcore.h" />
+		<Unit filename="../../source/core/core_fwd.h" />
+		<Unit filename="../../source/core/coretypes.h" />
+		<Unit filename="../../source/core/lighting/lightgroup.cpp" />
+		<Unit filename="../../source/core/lighting/lightgroup.h" />
+		<Unit filename="../../source/core/lighting/lightsource.cpp" />
+		<Unit filename="../../source/core/lighting/lightsource.h" />
+		<Unit filename="../../source/core/lighting/photons.cpp" />
+		<Unit filename="../../source/core/lighting/photons.h" />
+		<Unit filename="../../source/core/lighting/photons_fwd.h" />
+		<Unit filename="../../source/core/lighting/radiosity.cpp" />
+		<Unit filename="../../source/core/lighting/radiosity.h" />
+		<Unit filename="../../source/core/lighting/subsurface.cpp" />
+		<Unit filename="../../source/core/lighting/subsurface.h" />
+		<Unit filename="../../source/core/material/blendmap.cpp" />
+		<Unit filename="../../source/core/material/blendmap.h" />
+		<Unit filename="../../source/core/material/interior.cpp" />
+		<Unit filename="../../source/core/material/interior.h" />
+		<Unit filename="../../source/core/material/media.cpp" />
+		<Unit filename="../../source/core/material/media.h" />
+		<Unit filename="../../source/core/material/noise.cpp" />
+		<Unit filename="../../source/core/material/noise.h" />
+		<Unit filename="../../source/core/material/normal.cpp" />
+		<Unit filename="../../source/core/material/normal.h" />
+		<Unit filename="../../source/core/material/pattern.cpp" />
+		<Unit filename="../../source/core/material/pattern.h" />
+		<Unit filename="../../source/core/material/pattern_fwd.h" />
+		<Unit filename="../../source/core/material/pigment.cpp" />
+		<Unit filename="../../source/core/material/pigment.h" />
+		<Unit filename="../../source/core/material/portablenoise.cpp" />
+		<Unit filename="../../source/core/material/portablenoise.h" />
+		<Unit filename="../../source/core/material/texture.cpp" />
+		<Unit filename="../../source/core/material/texture.h" />
+		<Unit filename="../../source/core/material/warp.cpp" />
+		<Unit filename="../../source/core/material/warp.h" />
+		<Unit filename="../../source/core/math/chi2.cpp" />
+		<Unit filename="../../source/core/math/chi2.h" />
+		<Unit filename="../../source/core/math/hypercomplex.cpp" />
+		<Unit filename="../../source/core/math/hypercomplex.h" />
+		<Unit filename="../../source/core/math/jitter.cpp" />
+		<Unit filename="../../source/core/math/jitter.h" />
+		<Unit filename="../../source/core/math/matrix.cpp" />
+		<Unit filename="../../source/core/math/matrix.h" />
+		<Unit filename="../../source/core/math/polynomialsolver.cpp" />
+		<Unit filename="../../source/core/math/polynomialsolver.h" />
+		<Unit filename="../../source/core/math/quaternion.cpp" />
+		<Unit filename="../../source/core/math/quaternion.h" />
+		<Unit filename="../../source/core/math/randcosweighted.cpp" />
+		<Unit filename="../../source/core/math/randcosweighted.h" />
+		<Unit filename="../../source/core/math/randomsequence.cpp" />
+		<Unit filename="../../source/core/math/randomsequence.h" />
+		<Unit filename="../../source/core/math/spline.cpp" />
+		<Unit filename="../../source/core/math/spline.h" />
+		<Unit filename="../../source/core/math/vector.cpp" />
+		<Unit filename="../../source/core/math/vector.h" />
+		<Unit filename="../../source/core/precomp.cpp" />
+		<Unit filename="../../source/core/precomp.h" />
+		<Unit filename="../../source/core/render/ray.cpp" />
+		<Unit filename="../../source/core/render/ray.h" />
+		<Unit filename="../../source/core/render/ray_fwd.h" />
+		<Unit filename="../../source/core/render/trace.cpp" />
+		<Unit filename="../../source/core/render/trace.h" />
+		<Unit filename="../../source/core/render/tracepixel.cpp" />
+		<Unit filename="../../source/core/render/tracepixel.h" />
+		<Unit filename="../../source/core/scene/atmosphere.cpp" />
+		<Unit filename="../../source/core/scene/atmosphere.h" />
+		<Unit filename="../../source/core/scene/atmosphere_fwd.h" />
+		<Unit filename="../../source/core/scene/camera.cpp" />
+		<Unit filename="../../source/core/scene/camera.h" />
+		<Unit filename="../../source/core/scene/object.cpp" />
+		<Unit filename="../../source/core/scene/object.h" />
+		<Unit filename="../../source/core/scene/scenedata.cpp" />
+		<Unit filename="../../source/core/scene/scenedata.h" />
+		<Unit filename="../../source/core/scene/tracethreaddata.cpp" />
+		<Unit filename="../../source/core/scene/tracethreaddata.h" />
+		<Unit filename="../../source/core/shape/bezier.cpp" />
+		<Unit filename="../../source/core/shape/bezier.h" />
+		<Unit filename="../../source/core/shape/blob.cpp" />
+		<Unit filename="../../source/core/shape/blob.h" />
+		<Unit filename="../../source/core/shape/box.cpp" />
+		<Unit filename="../../source/core/shape/box.h" />
+		<Unit filename="../../source/core/shape/cone.cpp" />
+		<Unit filename="../../source/core/shape/cone.h" />
+		<Unit filename="../../source/core/shape/csg.cpp" />
+		<Unit filename="../../source/core/shape/csg.h" />
+		<Unit filename="../../source/core/shape/csg_fwd.h" />
+		<Unit filename="../../source/core/shape/disc.cpp" />
+		<Unit filename="../../source/core/shape/disc.h" />
+		<Unit filename="../../source/core/shape/fractal.cpp" />
+		<Unit filename="../../source/core/shape/fractal.h" />
+		<Unit filename="../../source/core/shape/heightfield.cpp" />
+		<Unit filename="../../source/core/shape/heightfield.h" />
+		<Unit filename="../../source/core/shape/isosurface.cpp" />
+		<Unit filename="../../source/core/shape/isosurface.h" />
+		<Unit filename="../../source/core/shape/lathe.cpp" />
+		<Unit filename="../../source/core/shape/lathe.h" />
+		<Unit filename="../../source/core/shape/lemon.cpp" />
+		<Unit filename="../../source/core/shape/lemon.h" />
+		<Unit filename="../../source/core/shape/mesh.cpp" />
+		<Unit filename="../../source/core/shape/mesh.h" />
+		<Unit filename="../../source/core/shape/ovus.cpp" />
+		<Unit filename="../../source/core/shape/ovus.h" />
+		<Unit filename="../../source/core/shape/parametric.cpp" />
+		<Unit filename="../../source/core/shape/parametric.h" />
+		<Unit filename="../../source/core/shape/plane.cpp" />
+		<Unit filename="../../source/core/shape/plane.h" />
+		<Unit filename="../../source/core/shape/polygon.cpp" />
+		<Unit filename="../../source/core/shape/polygon.h" />
+		<Unit filename="../../source/core/shape/polynomial.cpp" />
+		<Unit filename="../../source/core/shape/polynomial.h" />
+		<Unit filename="../../source/core/shape/prism.cpp" />
+		<Unit filename="../../source/core/shape/prism.h" />
+		<Unit filename="../../source/core/shape/quadric.cpp" />
+		<Unit filename="../../source/core/shape/quadric.h" />
+		<Unit filename="../../source/core/shape/sor.cpp" />
+		<Unit filename="../../source/core/shape/sor.h" />
+		<Unit filename="../../source/core/shape/sphere.cpp" />
+		<Unit filename="../../source/core/shape/sphere.h" />
+		<Unit filename="../../source/core/shape/spheresweep.cpp" />
+		<Unit filename="../../source/core/shape/spheresweep.h" />
+		<Unit filename="../../source/core/shape/superellipsoid.cpp" />
+		<Unit filename="../../source/core/shape/superellipsoid.h" />
+		<Unit filename="../../source/core/shape/torus.cpp" />
+		<Unit filename="../../source/core/shape/torus.h" />
+		<Unit filename="../../source/core/shape/triangle.cpp" />
+		<Unit filename="../../source/core/shape/triangle.h" />
+		<Unit filename="../../source/core/shape/truetype.cpp" />
+		<Unit filename="../../source/core/shape/truetype.h" />
+		<Unit filename="../../source/core/support/imageutil.cpp" />
+		<Unit filename="../../source/core/support/imageutil.h" />
+		<Unit filename="../../source/core/support/octree.cpp" />
+		<Unit filename="../../source/core/support/octree.h" />
+		<Unit filename="../../source/core/support/octree_fwd.h" />
+		<Unit filename="../../source/core/support/simplevector.h" />
+		<Unit filename="../../source/core/support/statisticids.cpp" />
+		<Unit filename="../../source/core/support/statisticids.h" />
+		<Unit filename="../../source/core/support/statistics.cpp" />
+		<Unit filename="../../source/core/support/statistics.h" />
+		<Unit filename="../povconfig/syspovconfigcore.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
